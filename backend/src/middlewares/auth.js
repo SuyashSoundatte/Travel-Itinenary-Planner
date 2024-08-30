@@ -1,5 +1,6 @@
 //checkAuth
 //verify JWT token
+<<<<<<< HEAD
 const jwt = require('jsonwebtoken');
 const User = require('../models/User');
 
@@ -19,3 +20,19 @@ const authMiddleware = async (req, res, next) => {
 };
 
 module.exports = authMiddleware;
+=======
+const jwt = require("jsonwebtoken");
+function checkAuth(req, res, next) {
+    const token = req.cookies.token;
+    if (!token) {
+        return res.redirect("");
+    }
+    jwt.verify(token, process.env.JWT_SECRET, (err, decoded) => {
+        if (err) {
+            return res.status(404).send("user not signed in");
+        } else {
+            next();
+        }
+    });
+}
+>>>>>>> de545649a0db4f6bc2121f1bce3e6bb08f77be14
