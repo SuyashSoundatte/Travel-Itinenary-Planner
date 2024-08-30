@@ -1,0 +1,2 @@
+//checkAuth
+//verify JWT token
