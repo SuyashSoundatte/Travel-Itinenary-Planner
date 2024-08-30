@@ -3,9 +3,9 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const authRoutes = require("./src/routes/auth.routes");
 const connectDb = require('./config'); // Update the path as per your folder structure
-const itineraryRoutes = require('./routes/itinerary');
-const expenseRoutes = require('./routes/expense');
-const collaborationRoutes = require('./routes/collaboration');
+const itineraryRoutes = require('./src/routes/itinerary.routes');
+const expenseRoutes = require('./src/routes/expense.routes');
+const collaborationRoutes = require('./src/routes/collaboration.routes');
 
 const app = express();
 const PORT = process.env.PORT || 5000;

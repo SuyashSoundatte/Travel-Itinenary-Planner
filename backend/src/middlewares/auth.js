@@ -1,8 +1,7 @@
 //checkAuth
 //verify JWT token
-<<<<<<< HEAD
 const jwt = require('jsonwebtoken');
-const User = require('../models/User');
+const User = require('../models/user.models');
 
 const authMiddleware = async (req, res, next) => {
     const token = req.header('Authorization').replace('Bearer ', '');
@@ -19,9 +18,6 @@ const authMiddleware = async (req, res, next) => {
     }
 };
 
-module.exports = authMiddleware;
-=======
-const jwt = require("jsonwebtoken");
 function checkAuth(req, res, next) {
     const token = req.cookies.token;
     if (!token) {
@@ -35,4 +31,7 @@ function checkAuth(req, res, next) {
         }
     });
 }
->>>>>>> de545649a0db4f6bc2121f1bce3e6bb08f77be14
+
+module.exports = authMiddleware;
+
+

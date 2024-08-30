@@ -5,7 +5,7 @@ const {
     updateItinerary,
     deleteItinerary
 } = require('../controllers/itineraryController');
-const authMiddleware = require('../middleware/authMiddleware');
+const authMiddleware = require('../middlewares/auth');
 
 const router = express.Router();
 

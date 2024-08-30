@@ -4,7 +4,7 @@ const {
     getCollaborators,
     shareItinerary
 } = require('../controllers/collaborationController');
-const authMiddleware = require('../middleware/authMiddleware');
+const authMiddleware = require('../middlewares/auth');
 
 const router = express.Router();
 

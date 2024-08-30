@@ -1,6 +1,6 @@
-const Invitation = require('../models/Invitation');
-const Itinerary = require('../models/Itinerary');
-const SharedItinerary = require('../models/SharedItinerary');
+const Invitation = require('../models/invitation.models');
+const Itinerary = require('../models/Itinerary.models');
+const SharedItinerary = require('../models/SharedItinerary.models');
 
 exports.sendInvitation = async (req, res) => {
     const { inviteeEmail, message } = req.body;

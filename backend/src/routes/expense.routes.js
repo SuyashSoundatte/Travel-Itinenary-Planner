@@ -4,7 +4,7 @@ const {
     getExpenses,
     deleteExpense
 } = require('../controllers/expenseController');
-const authMiddleware = require('../middleware/authMiddleware');
+const authMiddleware = require('../middlewares/auth');
 
 const router = express.Router();
 

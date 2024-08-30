@@ -1,4 +1,4 @@
-const Itinerary = require('../models/Itinerary');
+const Itinerary = require('../models/Itinerary.models');
 
 exports.createItinerary = async (req, res) => {
     const { destination, dates, activities, budget } = req.body;
