@@ -1,3 +1,3 @@
 // nearby places
 // get weather details
-//suggest places
+// get suggestions
