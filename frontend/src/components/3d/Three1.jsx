@@ -45,9 +45,12 @@ function ThreeScene() {
 
 function Three1() {
   return (
-    <div className="h-[120vh] w-full bg-red-900 grid grid-cols-2">
-      <div className="h-full w-full flex justify-center items-center">
-        <h1>Experience best planning</h1>
+    <div className="h-[120vh] w-full bg-yellow-600 grid grid-cols-2">
+      <div className="h-full w-full flex justify-center items-center flex-col">
+        <h1 className="text-[4em]">Our Mission</h1>
+        <p className="text-[1.5em] p-5">
+        We aim to revolutionize the way you plan and experience travel. By harnessing the power of technology, we strive to create a seamless, dynamic planning process that adapts to your needs and ensures your journey is as smooth and enjoyable as possible.
+        </p>
       </div>
       <div className="h-full w-full">
         <Canvas>

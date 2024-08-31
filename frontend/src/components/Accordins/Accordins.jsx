@@ -27,7 +27,7 @@ function Accordins() {
   };
 
   return (
-    <div className="h-screen w-full p-5 relative overflow-hidden">
+    <div className="h-screen w-full p-5 relative overflow-hidden bg-zinc-200">
       <div className="h-full w-full grid text-[2.5em] cursor-pointer grid-rows-5 relative">
         {accData.map((item, index) => (
           <div
