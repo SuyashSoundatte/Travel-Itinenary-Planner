@@ -31,7 +31,7 @@ function Plan() {
 
   return (
     <div className="marqueeScroll min-h-screen w-full p-10 flex flex-col bg-blue-400">
-      <h1 className="text-4xl font-bold mb-8">Plan Your Travelling Now!</h1>
+      <h1 className="text-[5em] font-bold mb-8 text-center">Plan Your Travelling Now!</h1>
       <div className="h-screen w-full p-10 flex gap-8">
         <div className="h-full w-full rounded-xl overflow-hidden">
           <img src={animated} alt="animated" className="object-cover w-full h-full rounded-xl" />

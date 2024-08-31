@@ -97,42 +97,53 @@ function CRUD() {
         </DialogActions>
       </Dialog>
 
-      <div className="Addtask pt-4 w-full bg-blue-300">
-        <label htmlFor="taskid">Enter task id: </label>
+      <div className="Addtask p-4 w-full flex-col flex justify-center items-center">
+        <div>
+        <div>
+        <label htmlFor="taskid" className="text-[2em]">Enter task id: </label>
         <input
           type="number"
           name="taskid"
           id="taskid"
+          className="border-none outline-none px-5 py-2 rounded-md bg-red-500"
           value={taskid}
           onChange={(e) => settaskid(e.target.value)}
         />
-        <label htmlFor="taskname">Enter task name: </label>
+        </div>
+        <div>
+        <label htmlFor="taskname" className="text-[2em]">Enter task name: </label>
         <input
           type="text"
           name="taskname"
           id="taskname"
+          className="border-none outline-none px-5 py-2 rounded-md bg-red-500"
           value={taskname}
           onChange={(e) => settaskname(e.target.value)}
         />
-        <label htmlFor="taskdetails">Enter task details: </label>
+        </div>
+        <div>
+        <label htmlFor="taskdetails" className="text-[2em]">Enter task details: </label>
         <input
           type="text"
           name="taskdetails"
           id="taskdetails"
+          className="border-none outline-none px-5 py-2 rounded-md bg-red-500"
           value={taskdetails}
           onChange={(e) => settaskdetails(e.target.value)}
         />
-        <Button variant="contained" color="success" onClick={handleAddTask}>
-          ADD
-        </Button>
-        <Button onClick={handleClear}>Clear</Button>
+        </div>
+        </div>
+        <div className="text-[2em] flex items-center justify-center">
+        <button onClick={handleAddTask} className="px-5 py-2 bg-red-400 rounded-lg">Add task</button>
+        <Button onClick={handleClear} className="px-5 py-2 bg-red-400">Clear</Button>
+        </div>
       </div>
 
       {data.map((item) => (
-        <div key={item.id} className="flex justify-center items-center gap-10">
-          <h1>{item.id}</h1>
-          <h1>{item.name}</h1>
-          <p>{item.task}</p>
+        <div key={item.id} className="flex justify-between items-center shadow-md gap-10 p-5">
+          <div className="text-[2em] ">{item.id}</div>
+          <div className="text-[2em] ">{item.name}</div>
+          <div className="text-[2em] ">{item.task}</div>
           <Button variant="contained" onClick={() => EditTask(item)}>
             Edit
           </Button>

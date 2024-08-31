@@ -15,6 +15,7 @@ import bag from "/images/scroll/bag.png"
 import plane from "/images/scroll/plane.png"
 import { ScrollTrigger } from 'gsap/all';
 import gsap from 'gsap';
+import Page from './components/CRUD/Page';
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -44,7 +45,6 @@ function App() {
       scroller: "body",
       start: "20% 50%",
       end: "55% 50%",
-      markers: true,
       scrub: 1
     }
   })
@@ -74,6 +74,8 @@ function App() {
         <Image ref={scrollref2} imgurl={plane} alttext="plane" classProp='w-[20%] top-[880px] scale-[0.7] -left-42 z-[99]' />
         <Plan data-scroll data-scroll-speed="-0.9" />
         <Accordins />
+        {/* <CRUD /> */}
+        <Page />
       </BrowserRouter>
     </ReactLenis>
   );

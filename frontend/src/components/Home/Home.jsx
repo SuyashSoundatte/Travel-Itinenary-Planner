@@ -51,7 +51,10 @@ function Home() {
             backgroundColor: "#000000c4",
           }}
         ></div>
-        <div className="w-[80%] h-[40vh] absolute top-[80%] z-30 left-[50%] -translate-x-[50%] shadow-2xl bg-yellow-200 rounded-lg"></div>
+        <div className="w-[80%] h-[40vh] absolute top-[80%] z-30 left-[50%] -translate-x-[50%] shadow-2xl bg-yellow-200 rounded-lg">
+          <h1 className="text-[6em] font-bold text-center">WanderWise</h1>
+          <p className="text-[1.8em] text-center">Plan and enjoy your trip</p>
+        </div>
         <div className="absolute -top-3 w-[80%] left-1/2 -translate-x-[50%] h-[10vh] bg-zinc-300 rounded-xl flex justify-center gap-10 items-center">
           <Link to="/">
             <h1>Home</h1>
