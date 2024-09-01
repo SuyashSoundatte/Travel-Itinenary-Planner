@@ -85,7 +85,7 @@ function CRUD() {
         <DialogTitle>Edit Task</DialogTitle>
         <DialogContent>
           <TextField
-            label="Task ID"
+            label="Itinerary ID"
             type="number"
             value={taskid}
             fullWidth
@@ -93,7 +93,7 @@ function CRUD() {
             margin="dense"
           />
           <TextField
-            label="Task Name"
+            label="Itinerary Name"
             type="text"
             value={taskname}
             onChange={(e) => settaskname(e.target.value)}
@@ -101,7 +101,7 @@ function CRUD() {
             margin="dense"
           />
           <TextField
-            label="Task Details"
+            label="Itinerary Details"
             type="text"
             value={taskdetails}
             onChange={(e) => settaskdetails(e.target.value)}
@@ -109,7 +109,7 @@ function CRUD() {
             margin="dense"
           />
           <FormControl fullWidth margin="dense">
-            <InputLabel id="select-place-label">Choose place</InputLabel>
+            <InputLabel id="select-place-label">Choose place Type</InputLabel>
             <Select
               labelId="select-place-label"
               id="select-place"
@@ -132,7 +132,7 @@ function CRUD() {
 
       <div className="Addtask p-4 w-full flex-col flex justify-center items-center">
         <div className="w-full">
-          <label htmlFor="taskid" className="w-[50%] text-[2em]">Enter task id: </label>
+          <label htmlFor="taskid" className="w-[50%] text-[2em]">Enter Itinerary id: </label>
           <TextField 
             label="Task ID"
             type="text"
@@ -143,7 +143,7 @@ function CRUD() {
           />
         </div>
         <div className="w-full">
-          <label htmlFor="taskname" className="w-[50%] text-[2em]">Enter task name: </label>
+          <label htmlFor="taskname" className="w-[50%] text-[2em]">Enter Itinerary name: </label>
           <TextField
             label="Task name"
             type="text"
@@ -155,7 +155,7 @@ function CRUD() {
           />
         </div>
         <div className="w-full">
-          <label htmlFor="taskdetails" className="w-[50%] text-[2em]">Enter task details: </label>
+          <label htmlFor="taskdetails" className="w-[50%] text-[2em]">Enter Itinerary details: </label>
           <TextField
             label="Task Details"
             type="text"

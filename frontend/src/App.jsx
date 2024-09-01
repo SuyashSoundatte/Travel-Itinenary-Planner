@@ -43,7 +43,7 @@ function App() {
     scrollTrigger: {
       trigger: ".secpage",
       scroller: "body",
-      start: "20% 50%",
+      start: "15% 50%",
       end: "55% 50%",
       scrub: 1
     }
@@ -52,8 +52,7 @@ function App() {
   const lenis = useLenis(({ scroll }) => {
     console.log('Current scroll position:', scroll);
   });
-
-  useEffect(() => {
+useEffect(() => {
     // Perform any side effects here, if needed
   }, [lenis]);
 
